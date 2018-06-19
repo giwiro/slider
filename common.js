@@ -28812,7 +28812,7 @@ var Steps = function Steps(_ref) {
       width: offset
     };
 
-    return [typeof bannerBeforeMark === 'number' && point === bannerBeforeMark && __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+    return [typeof bannerBeforeMark === 'number' && point === bannerBeforeMark && offset !== '0%' && __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
       'span',
       { key: 'bannerBeforeMark', className: bannerClassName, style: bannerStyle },
       banner

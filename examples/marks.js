@@ -67,7 +67,7 @@ __WEBPACK_IMPORTED_MODULE_2_react_dom___default.a.render(__WEBPACK_IMPORTED_MODU
     ),
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_rc_qempo_slider___default.a, {
       min: -10, marks: marks, step: null, onChange: log,
-      defaultValue: 20, bannerBeforeMark: 26, banner: 'Hi'
+      defaultValue: 20, bannerBeforeMark: 0, banner: 'Hi'
     })
   ),
   __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
