@@ -42,6 +42,7 @@ export default function createSlider(Component) {
       onFocus: PropTypes.func,
       onBlur: PropTypes.func,
       bannerBeforeMark: PropTypes.number,
+      banner: PropTypes.string,
     };
 
     static defaultProps = {
@@ -282,6 +283,7 @@ export default function createSlider(Component) {
         dotStyle,
         activeDotStyle,
         bannerBeforeMark,
+        banner,
       } = this.props;
       const { tracks, handles } = super.render();
 
@@ -315,6 +317,7 @@ export default function createSlider(Component) {
             prefixCls={prefixCls}
             vertical={vertical}
             marks={marks}
+            banner={banner}
             bannerBeforeMark={bannerBeforeMark}
             dots={dots}
             step={step}

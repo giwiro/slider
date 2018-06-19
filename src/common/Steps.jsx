@@ -17,8 +17,8 @@ const calcPoints = (vertical, marks, dots, step, min, max) => {
   return points;
 };
 
-const Steps = ({ prefixCls, vertical, marks, dots, step, included,
-                lowerBound, upperBound, max, min, dotStyle, activeDotStyle, bannerBeforeMark }) => {
+const Steps = ({ prefixCls, vertical, marks, dots, step, included, lowerBound,
+                 upperBound, max, min, dotStyle, activeDotStyle, bannerBeforeMark, banner }) => {
   const range = max - min;
   const elements = calcPoints(vertical, marks, dots, step, min, max).map((point) => {
     const offset = `${Math.abs(point - min) / range * 100}%`;
@@ -42,7 +42,7 @@ const Steps = ({ prefixCls, vertical, marks, dots, step, included,
 
     return [
       typeof bannerBeforeMark === 'number' && point === bannerBeforeMark &&
-        <span key="bannerBeforeMark" className={bannerClassName} style={bannerStyle} />,
+      <span key="bannerBeforeMark" className={bannerClassName} style={bannerStyle}>{banner}</span>,
       <span className={pointClassName} style={style} key={point} />,
     ];
   });

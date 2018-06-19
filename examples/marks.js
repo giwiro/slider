@@ -1,8 +1,8 @@
-import 'rc-slider/assets/index.less';
+import 'rc-qempo-slider/assets/index.less';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Slider from 'rc-slider';
+import Slider from 'rc-qempo-slider';
 
 const style = { width: 400, margin: 50 };
 const marks = {
@@ -29,7 +29,7 @@ ReactDOM.render(
       <p>Slider with marks, `step=null`</p>
       <Slider
         min={-10} marks={marks} step={null} onChange={log}
-        defaultValue={20} bannerBeforeMark={26}
+        defaultValue={20} bannerBeforeMark={26} banner="Hi"
       />
     </div>
     <div style={style}>

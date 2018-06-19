@@ -13,6 +13,8 @@ class Slider extends React.Component {
     disabled: PropTypes.bool,
     autoFocus: PropTypes.bool,
     tabIndex: PropTypes.number,
+    bannerBeforeMark: PropTypes.number,
+    banner: PropTypes.string,
   };
 
   constructor(props) {
