@@ -29,7 +29,7 @@ ReactDOM.render(
       <p>Slider with marks, `step=null`</p>
       <Slider
         min={-10} marks={marks} step={null} onChange={log}
-        defaultValue={20} bannerBeforeMark={26} banner="Hi"
+        defaultValue={20} bannerBeforeMark={0} banner="Hi"
       />
     </div>
     <div style={style}>

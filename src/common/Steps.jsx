@@ -40,8 +40,10 @@ const Steps = ({ prefixCls, vertical, marks, dots, step, included, lowerBound,
       width: offset,
     };
 
+    console.log('offset', offset);
+
     return [
-      typeof bannerBeforeMark === 'number' && point === bannerBeforeMark &&
+      typeof bannerBeforeMark === 'number' && point === bannerBeforeMark && offset !== '0%' &&
       <span key="bannerBeforeMark" className={bannerClassName} style={bannerStyle}>{banner}</span>,
       <span className={pointClassName} style={style} key={point} />,
     ];
