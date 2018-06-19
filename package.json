@@ -1,5 +1,5 @@
 {
-  "name": "rc-slider",
+  "name": "rc-qempo-slider",
   "version": "8.6.1",
   "description": "Slider UI component for React",
   "keywords": [
@@ -31,7 +31,7 @@
   "config": {
     "port": 8005,
     "entry": {
-      "rc-slider": [
+      "rc-qempo-slider": [
         "./assets/index.less",
         "./src/index.js"
       ]
